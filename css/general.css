@@ -89,11 +89,6 @@ body {
 	color: #FFFFFF;
 	border: 3px solid transparent;
 }
-.button:active {
-	border: 3px solid #9B735C;
-	color: #9B735C;
-	background-color: #fff;
-}
 .header__nav {
 	display: flex;
 	justify-content: space-between;
@@ -431,6 +426,86 @@ body {
 	border: 3px solid #9B735C;
 	font-family: "Lato", sans-serif;
 	color: #9B735C;
+	background-color: #fff;
+}
+.button_show {
+	grid-column: 1/4;
+	background: #FFFFFF;
+	border: 3px solid #9B735C;
+	max-width: 870px;
+	width: 100%;
+	color: #9B735C;
 }
 
+/* instagram */
+
+.instagram {
+	padding: 130px 0px 130px 0px;
+}
+.instagram__title {
+	font-weight: 700;
+	font-size: 36px;
+	margin-bottom: 70px;
+}
+.instagram__gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 369px);
+	gap: 30px;
+}
+
+/* footer */
+
+.footer {
+	padding: 120px 0px 57px 0px;
+	background-color: #F5F5F5;
+}
+.logo_footer {
+	margin-right: 165px;
+}
+.footer__items {
+	display: flex;
+	align-items: flex-start;
+}
+.footer__item ul {
+	list-style-type: none;
+	padding: 0;
+}
+.footer__item li {
+	margin-bottom: 20px;
+}
+.footer__item + .footer__item {
+	margin-left: 65px;
+}
+.footer__item a {
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.footer__subtitle {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+.footer__copyright p {
+	font-family: "Roboto", sans-serif;
+	font-size: 13px;
+	margin: 5px 0;
+}
+.footer__social {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 40px;
+}
+.footer__icons {
+	display: flex;
+	margin: 0 auto;
+}
+.footer__icon {
+	margin: 0px 5px;
+}
+.footer__icon svg {
+	width: 30px;
+	height: 30px;
+}
 
