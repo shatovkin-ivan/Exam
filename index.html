@@ -182,56 +182,225 @@
 						</svg>
 					</div>
 				</div>
-				<foem class="filter">
-					<div class="filer__price">
-						<a href="#" class="filter__dropdown">
-							<svg>
-								<use xlink:href="#arrow"></use>
-							</svg>
-							<p class="filer__category">Цена
-							</p>
-						</a>
-						<div class="filter__prise_inputs">
-							<input type="text" placeholder="от 1199">
-							<input type="text" placeholder="до 1 599 999">
-						</div>
-						<div class="filter__checkbox">
-							<div class="filter__checkbox_wrap">
-								<input type="text">
-								<p class="filter__checkbox_text">Распродажа</p>
-							</div>
-							<div class="filter__checkbox_wrap">
-								<input type="text">
-								<p class="filter__checkbox_text">На складе</p>
+				<aside class="filter">
+					<form class="filter__content">
+						<div class="filer__item">
+							<a href="#" class="filter__descr">
+								<svg class="arrow_active">
+									<use xlink:href="#arrow"></use>
+								</svg>
+								<h3 class="filter__subtitle">
+									Цена
+								</h3>
+							</a>
+							<div class="filter__dropdown filter__price">
+								<input type="text" placeholder="от 1199">
+								<input type="text" placeholder="до 1 599 999">
 							</div>
 						</div>
-					</div>
-					<div class="filer__other">
-						<a href="#" class="filter__dropdown">Производитель</a>
-						<a href="#" class="filter__dropdown">Стиль</a>
-						<a href="#" class="filter__dropdown">Коллекция</a>
-						<a href="#" class="filter__dropdown">Страна</a>
-						<a href="#" class="filter__dropdown">Материал</a>
-						<a href="#" class="filter__dropdown">Цвет</a>
-					</div>
-					<div class="filter__buttons">
-						<button class="button">Применить</button>
-						<button class="button">Сбросить</button>
-					</div>
+						<div class="filer__item">
+							<a href="#" class="filter__descr">
+								<svg>
+									<use xlink:href="#arrow"></use>
+								</svg>
+								<h3 class="filter__subtitle">
+									Производитель
+								</h3>
+							</a>
+							<div class="filter__dropdown">
+							</div>
+						</div>
+						<div class="filer__item">
+							<a href="#" class="filter__descr">
+								<svg class="arrow_active">
+									<use xlink:href="#arrow"></use>
+								</svg>
+								<h3 class="filter__subtitle">
+									Страна
+								</h3>
+							</a>
+							<div class="filter__dropdown">
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Все страны</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Россия</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Италия</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Португалия</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Швеция</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Германия</p>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filer__item">
+							<a href="#" class="filter__descr">
+								<svg>
+									<use xlink:href="#arrow"></use>
+								</svg>
+								<h3 class="filter__subtitle">
+									Стиль
+								</h3>
+							</a>
+						</div>
+						<div class="filer__item">
+							<a href="#" class="filter__descr">
+								<svg class="arrow_active">
+									<use xlink:href="#arrow"></use>
+								</svg>
+								<h3 class="filter__subtitle">
+									Материал
+								</h3>
+							</a>
+						</div>
+						<div class="filer__item">
+							<a href="#" class="filter__descr">
+								<svg>
+									<use xlink:href="#arrow"></use>
+								</svg>
+								<h3 class="filter__subtitle">
+									Цвет
+								</h3>
+								<span class="hint">
+									<svg>
+										<use xlink:href="#hint"></use>
+									</svg>
+									<div class="hint__block">
+										<p class="hint__text">
+											Мебель на заказ может быть изготовлена в любом цвете
+										</p>
+									</div>
+								</span>
+							</a>
+						</div>
+						<div class="filer__item">
+							<a href="#" class="filter__descr">
+								<svg>
+									<use xlink:href="#arrow"></use>
+								</svg>
+								<h3 class="filter__subtitle">
+									Коллекция
+								</h3>
+							</a>
+						</div>
+						<div class="filer__item">
+							<a href="#" class="filter__descr">
+								<svg>
+									<use xlink:href="#arrow"></use>
+								</svg>
+								<h3 class="filter__subtitle">
+									Материал
+								</h3>
+							</a>
+							<div class="filter__dropdown">
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Дерево</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Кожа</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Стекло</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">МДФ</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Массив</p>
+									</label>
+								</div>
+								<div class="checkbox__wrap">
+									<label class="checkbox">
+										<input class="checkbox__input" type="checkbox">
+										<span class="checkmark"></span>
+										<p class="checkbox__text">Ткань</p>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="checkbox__wrap">
+							<label class="checkbox">
+								<input class="checkbox__input" type="checkbox">
+								<span class="checkmark"></span>
+								<p class="checkbox__text">Распродажа</p>
+							</label>
+						</div>
+						<div class="checkbox__wrap">
+							<label class="checkbox">
+								<input class="checkbox__input" type="checkbox">
+								<span class="checkmark"></span>
+								<p class="checkbox__text">На склад</p>
+							</label>
+						</div>
+						<div class="filter__buttons">
+							<button class="button button_apply">Применить</button>
+							<button class="button button_reset">Сбросить</button>
+						</div>
+					</form>
+				</aside>
+
 			</div>
-		</div>
 		</div>
 	</section>
 
-
-
 	<svg display="none">
 		<symbol id="search" viewBox="0 0 24 24">
-			<path
-				d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-				stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-			<path d="M21 20.9999L16.65 16.6499" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C12.866 16 16 12.866 16 9C16 5.13401 12.866 2 9 2ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z"
+				fill="#4F4F4F" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M13.9429 13.9429C14.3334 13.5524 14.9666 13.5524 15.3571 13.9429L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L13.9429 15.3571C13.5524 14.9666 13.5524 14.3334 13.9429 13.9429Z"
+				fill="#4F4F4F" />
 		</symbol>
 		<symbol id="user" viewBox="0 0 24 24">
 			<path
@@ -336,6 +505,11 @@
 		</symbol>
 		<symbol id="union2" viewBox="0 0 13 13">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H13V3H0V0ZM0 5H13V8H0V5ZM13 10H0V13H13V10Z"
+				fill="#4F4F4F" />
+		</symbol>
+		<symbol id="hint" viewBox="0 0 21 20">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M10.6402 0C5.1262 0 0.640198 4.48606 0.640198 10.0001C0.640198 15.5141 5.1262 20 10.6402 20C16.1542 20 20.6402 15.5141 20.6402 10.0001C20.6402 4.48606 16.1542 0 10.6402 0ZM10.6402 18.1818C6.12868 18.1818 2.45838 14.5115 2.45838 10.0001C2.45838 5.48861 6.12868 1.81818 10.6402 1.81818C15.1517 1.81818 18.822 5.48861 18.822 10.0001C18.822 14.5115 15.1517 18.1818 10.6402 18.1818ZM10.64 4.24243C9.9718 4.24243 9.42816 4.78643 9.42816 5.4551C9.42816 6.12316 9.9718 6.66667 10.64 6.66667C11.3083 6.66667 11.8519 6.12316 11.8519 5.4551C11.8519 4.78643 11.3083 4.24243 10.64 4.24243ZM9.73114 9.39395C9.73114 8.89189 10.1382 8.48486 10.6402 8.48486C11.1423 8.48486 11.5493 8.89189 11.5493 9.39395V14.8485C11.5493 15.3506 11.1423 15.7576 10.6402 15.7576C10.1382 15.7576 9.73114 15.3506 9.73114 14.8485V9.39395Z"
 				fill="#4F4F4F" />
 		</symbol>
 	</svg>
