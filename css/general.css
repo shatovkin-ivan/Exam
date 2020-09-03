@@ -22,6 +22,9 @@ body {
 .container_header {
 	max-width: 1555px;
 }
+.header__wrap_mobile {
+	display: flex;
+}
 .header__content {
 	display: flex;
 	justify-content: space-between;
@@ -49,7 +52,7 @@ body {
 	font-size: 26px;
 	text-transform: uppercase;
 	color: #2B2A28;
-	line-height: 30px;
+	min-width: 252px;
 }
 .logo__text-second {
 	font-family: "Roboto", sans-serif;
@@ -60,6 +63,7 @@ body {
 .header__contacts {
 	max-width: 242px;
 	position: relative;
+	margin: 0px 45px;
 }
 .header__contacts address {
 	font-family: "Roboto", sans-serif;
@@ -126,9 +130,9 @@ body {
 .header__icons {
 	display: flex;
 }
-.header a {
-	margin-left: 25px;
+.header__icons a {
 	position: relative;
+	margin-left: 20px;
 }
 .header__icons svg {
 	width: 20px;
@@ -378,16 +382,16 @@ body {
 	font-family: "Roboto", sans-serif;
 	max-width: 195px;
 }
-.products__wrap {
-	display: flex;
-	justify-content: space-between;
-}
 .products__gallery {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 580px);
 	gap: 30px;
 	margin-top: 63px;
+}
+.products__wrap {
+	display: flex;
+	justify-content: space-between;
 }
 .card {
 	max-width: 270px;
@@ -499,6 +503,9 @@ body {
 	font-family: 'HelveticaNeue', sans-serif;
 	font-size: 13px;
 	text-transform: uppercase;
+}
+.footer__item_first {
+	min-width: 170px;
 }
 .footer__subtitle {
 	font-family: "Roboto", sans-serif;
