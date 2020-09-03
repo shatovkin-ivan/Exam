@@ -489,6 +489,11 @@ body {
 	display: flex;
 	align-items: flex-start;
 }
+.footer__items_wrap {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
 .footer__item ul {
 	list-style-type: none;
 	padding: 0;
