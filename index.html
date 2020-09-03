@@ -15,7 +15,7 @@
 	<header class="header">
 		<div class="container container_header">
 			<div class="header__content">
-				<a href="#" class="logo">
+				<a href="#" class="logo" id="logo">
 					<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect x="0.5" y="0.5" width="64" height="63" stroke="#967850" />
 						<path fill-rule="evenodd" clip-rule="evenodd"
@@ -32,12 +32,12 @@
 						онлайн салон мебели и декора
 					</div>
 				</a>
-				<div class="header__contacts">
+				<div class="header__contacts line hide">
 					<address class="header__adress">
 						г.Москва, ул. Ленинская Слобода, 26с28, офис 221, БЦ Слободской
 					</address>
 				</div>
-				<div class="header__contacts">
+				<div class="header__contacts line">
 					<div class="header__dropdown">
 						<a href="" class="header__city">
 							Москва
@@ -62,11 +62,16 @@
 			<div class="header__nav">
 				<nav>
 					<ul class="menu">
+						<span class="hamburger">
+							<svg>
+								<use xlink:href="#union2"></use>
+							</svg>
+						</span>
 						<li><a href="#">Каталог</a></li>
-						<li><a href="#">О компании</a></li>
+						<li class="hide"><a href="#">О компании</a></li>
 						<li><a href="#">Бренды</a></li>
 						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">Отзывы</a></li>
+						<li class="hide"><a href="#">Отзывы</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
@@ -185,198 +190,208 @@
 				<div class="products__wrap">
 					<aside class="filter">
 						<form class="filter__content">
-							<div class="filer__item">
-								<a href="#" class="filter__descr">
-									<svg class="arrow_active">
-										<use xlink:href="#arrow"></use>
-									</svg>
-									<h3 class="filter__subtitle">
-										Цена
-									</h3>
-								</a>
-								<div class="filter__dropdown filter__price">
-									<input type="text" placeholder="от 1199">
-									<input type="text" placeholder="до 1 599 999">
-								</div>
-							</div>
-							<div class="filer__item">
-								<a href="#" class="filter__descr">
-									<svg>
-										<use xlink:href="#arrow"></use>
-									</svg>
-									<h3 class="filter__subtitle">
-										Производитель
-									</h3>
-								</a>
-								<div class="filter__dropdown">
-								</div>
-							</div>
-							<div class="filer__item">
-								<a href="#" class="filter__descr">
-									<svg class="arrow_active">
-										<use xlink:href="#arrow"></use>
-									</svg>
-									<h3 class="filter__subtitle">
-										Страна
-									</h3>
-								</a>
-								<div class="filter__dropdown">
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Все страны</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Россия</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Италия</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Португалия</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Швеция</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Германия</p>
-										</label>
-									</div>
-								</div>
-							</div>
-							<div class="filer__item">
-								<a href="#" class="filter__descr">
-									<svg>
-										<use xlink:href="#arrow"></use>
-									</svg>
-									<h3 class="filter__subtitle">
-										Стиль
-									</h3>
-								</a>
-							</div>
-							<div class="filer__item">
-								<a href="#" class="filter__descr">
-									<svg class="arrow_active">
-										<use xlink:href="#arrow"></use>
-									</svg>
-									<h3 class="filter__subtitle">
-										Материал
-									</h3>
-								</a>
-							</div>
-							<div class="filer__item">
-								<a href="#" class="filter__descr">
-									<svg>
-										<use xlink:href="#arrow"></use>
-									</svg>
-									<h3 class="filter__subtitle">
-										Цвет
-									</h3>
-									<span class="hint">
-										<svg>
-											<use xlink:href="#hint"></use>
+							<div class="filter__price-wrap">
+								<div class="filer__item">
+									<a href="#" class="filter__descr">
+										<svg class="arrow_active">
+											<use xlink:href="#arrow"></use>
 										</svg>
-										<div class="hint__block">
-											<p class="hint__text">
-												Мебель на заказ может быть изготовлена в любом цвете
-											</p>
+										<h3 class="filter__subtitle">
+											Цена
+										</h3>
+									</a>
+									<div class="filter__dropdown filter__price">
+										<input type="text" placeholder="от 1199">
+										<input type="text" placeholder="до 1 599 999">
+									</div>
+									<div class="checkbox__wrap-mobile show">
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Распродажа</p>
+											</label>
 										</div>
-									</span>
-								</a>
-							</div>
-							<div class="filer__item">
-								<a href="#" class="filter__descr">
-									<svg>
-										<use xlink:href="#arrow"></use>
-									</svg>
-									<h3 class="filter__subtitle">
-										Коллекция
-									</h3>
-								</a>
-							</div>
-							<div class="filer__item">
-								<a href="#" class="filter__descr">
-									<svg>
-										<use xlink:href="#arrow"></use>
-									</svg>
-									<h3 class="filter__subtitle">
-										Материал
-									</h3>
-								</a>
-								<div class="filter__dropdown">
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Дерево</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Кожа</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Стекло</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">МДФ</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Массив</p>
-										</label>
-									</div>
-									<div class="checkbox__wrap">
-										<label class="checkbox">
-											<input class="checkbox__input" type="checkbox">
-											<span class="checkmark"></span>
-											<p class="checkbox__text">Ткань</p>
-										</label>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">На складе</p>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="checkbox__wrap">
+							<div class="filter__mobile-wrap">
+								<div class="filter__item">
+									<a href="#" class="filter__descr">
+										<svg>
+											<use xlink:href="#arrow"></use>
+										</svg>
+										<h3 class="filter__subtitle">
+											Производитель
+										</h3>
+									</a>
+									<div class="filter__dropdown">
+									</div>
+								</div>
+								<div class="filter__item country">
+									<a href="#" class="filter__descr">
+										<svg class="arrow_active">
+											<use xlink:href="#arrow"></use>
+										</svg>
+										<h3 class="filter__subtitle">
+											Страна
+										</h3>
+									</a>
+									<div class="filter__dropdown">
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Все страны</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Россия</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Италия</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Португалия</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Швеция</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Германия</p>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__item">
+									<a href="#" class="filter__descr">
+										<svg>
+											<use xlink:href="#arrow"></use>
+										</svg>
+										<h3 class="filter__subtitle">
+											Стиль
+										</h3>
+									</a>
+								</div>
+								<div class="filter__item color">
+									<a href="#" class="filter__descr">
+										<svg>
+											<use xlink:href="#arrow"></use>
+										</svg>
+										<h3 class="filter__subtitle">
+											Цвет
+										</h3>
+										<span class="hint">
+											<svg>
+												<use xlink:href="#hint"></use>
+											</svg>
+											<div class="hint__block">
+												<p class="hint__text">
+													Мебель на заказ может быть изготовлена в любом цвете
+												</p>
+											</div>
+										</span>
+									</a>
+								</div>
+								<div class="filter__item">
+									<a href="#" class="filter__descr">
+										<svg>
+											<use xlink:href="#arrow"></use>
+										</svg>
+										<h3 class="filter__subtitle">
+											Коллекция
+										</h3>
+									</a>
+								</div>
+								<div class="filter__item material">
+									<a href="#" class="filter__descr">
+										<svg class="arrow_active">
+											<use xlink:href="#arrow"></use>
+										</svg>
+										<h3 class="filter__subtitle">
+											Материал
+										</h3>
+									</a>
+									<div class="filter__dropdown filter__dropdon_hide">
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Дерево</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Кожа</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Стекло</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">МДФ</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Массив</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Ткань</p>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="checkbox__wrap checkbox__wrap checkbox__wrap_hide">
 								<label class="checkbox">
 									<input class="checkbox__input" type="checkbox">
 									<span class="checkmark"></span>
 									<p class="checkbox__text">Распродажа</p>
 								</label>
 							</div>
-							<div class="checkbox__wrap">
+							<div class="checkbox__wrap checkbox__wrap_hide">
 								<label class="checkbox">
 									<input class="checkbox__input" type="checkbox">
 									<span class="checkmark"></span>
@@ -391,7 +406,7 @@
 					</aside>
 
 					<div class="products__gallery">
-						<div class="card">
+						<div class="card card1">
 							<div class="card__img">
 								<img src="img/images/img9.jpg" alt="img">
 							</div>
@@ -424,7 +439,7 @@
 								В корзину
 							</a>
 						</div>
-						<div class="card">
+						<div class="card card2">
 							<div class="card__img">
 								<img src="img/images/img4.jpg" alt="img">
 							</div>
@@ -457,7 +472,7 @@
 								В корзину
 							</a>
 						</div>
-						<div class="card">
+						<div class="card card3">
 							<div class="card__img">
 								<img src="img/images/img5.jpg" alt="img">
 							</div>
@@ -490,7 +505,7 @@
 								В корзину
 							</a>
 						</div>
-						<div class="card">
+						<div class="card card4">
 							<div class="card__img">
 								<img src="img/images/img6.jpg" alt="img">
 							</div>
@@ -523,7 +538,7 @@
 								В корзину
 							</a>
 						</div>
-						<div class="card">
+						<div class="card card5">
 							<div class="card__img">
 								<img src="img/images/img7.jpg" alt="img">
 							</div>
@@ -556,7 +571,7 @@
 								В корзину
 							</a>
 						</div>
-						<div class="card">
+						<div class="card card6">
 							<div class="card__img">
 								<img src="img/images/img8.jpg" alt="img">
 							</div>
@@ -727,6 +742,10 @@
 			</div>
 		</div>
 	</footer>
+
+
+	<!-- sprites -->
+
 
 	<svg style="width:0; height: 0; visibility: hidden;">
 		<symbol id="logo" viewBox="0 0 65 64">

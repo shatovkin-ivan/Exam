@@ -27,15 +27,18 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
+#logo {
+	margin: 0;
+}
 .logo {
 	display: flex;
 	align-items: center;
 	max-width: 336px;
-	width: 100%;
 }
 .logo svg {
 	width: 65px;
-   height: 65px;
+	height: 65px;
+	margin: 0;
 }
 .logo__text {
 	margin-left: 20px;
@@ -56,11 +59,23 @@ body {
 }
 .header__contacts {
 	max-width: 242px;
+	position: relative;
 }
 .header__contacts address {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: normal;
+	
+}
+.line::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 35px;
+	background-color: #DDDDDD;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -15%;
 }
 .header__dropdown {
 	display: flex;
@@ -216,6 +231,9 @@ body {
 	font-weight: 700;
 	font-size: 36px;
 	margin-bottom: 10px;
+}
+.products__wrap {
+	display: grid;
 }
 .mini-filter {
 	display: flex;
