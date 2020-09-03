@@ -249,6 +249,7 @@ body {
 	max-width: 250px;
 	width: 100%;
 	margin-top: 60px;
+	margin-right: 70px;
 }
 .filter__descr {
 	display: flex;
@@ -364,3 +365,72 @@ body {
 	font-family: "Roboto", sans-serif;
 	max-width: 195px;
 }
+.products__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.products__gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 580px);
+	gap: 30px;
+	margin-top: 63px;
+}
+.card {
+	max-width: 270px;
+	width: 100%;
+	padding: 0px 20px 32px 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+}
+.card__img {
+	margin: 0px -20px 30px -20px;
+}
+.card__img img {
+	object-fit: cover;
+}
+.card__subtitle {
+	font-weight: 700;
+	font-size: 18px;
+	max-width: 230px;
+	text-align: center;
+	margin-bottom: 11px;
+}
+.card__specification {
+	display: flex;
+}
+.card__properties {
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	margin-right: 20px;
+}
+.card__price {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.card__price_main {
+	font-size: 22px;
+	margin-right: 30px;
+}
+.card__price_sale {
+	font-size: 16px;
+	display: flex;
+	text-decoration-line: line-through;
+	color: #959595;
+}
+.button_card {
+	width: 230px;
+	height: 59px;
+	transition: .4s;
+	margin: 0 auto;
+}
+.button_card:hover {
+	transition: .4s;
+	border: 3px solid #9B735C;
+	font-family: "Lato", sans-serif;
+	color: #9B735C;
+}
+
+
