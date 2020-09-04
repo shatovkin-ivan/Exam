@@ -321,7 +321,7 @@ body {
 	height: 10px;
 	margin-left: 10px;
 }
-.mini-filer_icons svg {
+.mini-filter_icons svg {
 	width: 13px;
 	height: 13px;
 	margin-left: 15px;
@@ -668,4 +668,34 @@ body {
 .footer__icon svg {
 	width: 30px;
 	height: 30px;
+}
+.arrow__top {
+	width: 80px;
+	height: 80px;
+	background-color: #C4C4C4;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 230px;
+	right: 191px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	visibility: hidden;
+	transition: .4s;
+	opacity: 0;
+}
+.arrow__top svg {
+	width: 29px;
+	height: 37px;
+}
+.arrow__top_active {
+	visibility: visible;
+	transition: .4s;
+	opacity: 1;
 }

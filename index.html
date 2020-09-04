@@ -12,7 +12,7 @@
 
 	<!-- header -->
 
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container container_header">
 			<div class="header__content">
 				<a href="#" class="logo" id="logo">
@@ -194,7 +194,7 @@
 							</svg>
 						</a>
 					</div>
-					<div class="mini-filer_icons">
+					<div class="mini-filter_icons">
 						<svg>
 							<use xlink:href="#union1"></use>
 						</svg>
@@ -207,7 +207,7 @@
 					<aside class="filter">
 						<form class="filter__content">
 							<div class="filter__price-wrap">
-								<div class="filer__item">
+								<div class="filter__item">
 									<a href="#" class="filter__descr">
 										<svg class="arrow_active">
 											<use xlink:href="#arrow"></use>
@@ -263,7 +263,7 @@
 									<div class="filter__dropdown">
 									</div>
 								</div>
-								<div class="filter__item country">
+								<div class="filter__item filter__item_active country">
 									<a href="#" class="filter__descr">
 										<svg class="arrow_active">
 											<use xlink:href="#arrow"></use>
@@ -272,7 +272,7 @@
 											Страна
 										</h3>
 									</a>
-									<div class="filter__dropdown">
+									<div class="filter__dropdown filter__dropdown_active">
 										<div class="checkbox__wrap">
 											<label class="checkbox">
 												<input class="checkbox__input" type="checkbox">
@@ -771,11 +771,14 @@
 				</div>
 			</div>
 		</div>
+		<a href="#header" class="arrow__top anchor">
+			<svg>
+				<use xlink:href="#arrow-top"></use>
+			</svg>
+		</a>
 	</footer>
 
-
 	<!-- sprites -->
-
 
 	<svg style="width:0; height: 0; visibility: hidden;">
 		<symbol id="logo" viewBox="0 0 65 64">
@@ -989,7 +992,17 @@
 				</g>
 			</symbol>
 		</defs>
+		<symbol id="arrow-top" viewBox="0 0 32 40">
+			<path d="M1.65625 16.0156L16 1.67188" stroke="white" stroke-width="3" stroke-miterlimit="10"
+				stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M30.3438 16.0156L16 1.67188" stroke="white" stroke-width="3" stroke-miterlimit="10"
+				stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M16 38.3281V1.67188" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round" />
+		</symbol>
 	</svg>
+	<script src="script/jquery-3.5.1.min.js"></script>
+	<script src="script/script.js"></script>
 </body>
 
 </html>
