@@ -189,7 +189,7 @@
 							<p class="sort-by">
 								по возрастанию цены
 							</p>
-							<svg>
+							<svg class="arrow">
 								<use xlink:href="#arrow"></use>
 							</svg>
 						</a>
@@ -209,16 +209,18 @@
 							<div class="filter__price-wrap">
 								<div class="filter__item">
 									<a href="#" class="filter__descr">
-										<svg class="arrow_active">
+										<svg class="arrow">
 											<use xlink:href="#arrow"></use>
 										</svg>
 										<h3 class="filter__subtitle">
 											Цена
 										</h3>
 									</a>
-									<div class="filter__dropdown filter__price">
-										<input type="text" placeholder="от 1199">
-										<input type="text" placeholder="до 1 599 999">
+									<div class="filter__dropdown">
+										<div class="filter__price-input">
+											<input type="text" class="price-input" placeholder="от 1199">
+											<input type="text" class="price-input" placeholder="до 1 599 999">
+										</div>
 									</div>
 									<div class="checkbox__wrap-mobile show">
 										<div class="checkbox__wrap">
@@ -240,7 +242,7 @@
 							</div>
 							<div class="filter__main">
 								<a href="#" class="filter__descr">
-									<svg>
+									<svg class="arrow">
 										<use xlink:href="#arrow"></use>
 									</svg>
 									<h3 class="filter__subtitle">
@@ -253,7 +255,7 @@
 							<div class="filter__mobile-wrap">
 								<div class="filter__item">
 									<a href="#" class="filter__descr">
-										<svg>
+										<svg class="arrow">
 											<use xlink:href="#arrow"></use>
 										</svg>
 										<h3 class="filter__subtitle">
@@ -261,18 +263,60 @@
 										</h3>
 									</a>
 									<div class="filter__dropdown">
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Производитель1</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Производитель2</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Производитель3</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Производитель4</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Производитель5</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Производитель6</p>
+											</label>
+										</div>
 									</div>
 								</div>
-								<div class="filter__item filter__item_active country">
+								<div class="filter__item country">
 									<a href="#" class="filter__descr">
-										<svg class="arrow_active">
+										<svg class="arrow">
 											<use xlink:href="#arrow"></use>
 										</svg>
 										<h3 class="filter__subtitle">
 											Страна
 										</h3>
 									</a>
-									<div class="filter__dropdown filter__dropdown_active">
+									<div class="filter__dropdown">
 										<div class="checkbox__wrap">
 											<label class="checkbox">
 												<input class="checkbox__input" type="checkbox">
@@ -319,17 +363,61 @@
 								</div>
 								<div class="filter__item">
 									<a href="#" class="filter__descr">
-										<svg>
+										<svg class="arrow">
 											<use xlink:href="#arrow"></use>
 										</svg>
 										<h3 class="filter__subtitle">
 											Стиль
 										</h3>
 									</a>
+									<div class="filter__dropdown">
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Стиль1</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Стиль2</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Стиль3</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Стиль4</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Стиль5</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Стиль6</p>
+											</label>
+										</div>
+									</div>
 								</div>
 								<div class="filter__item color">
 									<a href="#" class="filter__descr">
-										<svg>
+										<svg class="arrow">
 											<use xlink:href="#arrow"></use>
 										</svg>
 										<h3 class="filter__subtitle">
@@ -346,20 +434,108 @@
 											</div>
 										</span>
 									</a>
+									<div class="filter__dropdown">
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Цвет1</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Цвет2</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Цвет3</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Цвет4</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Цвет5</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Цвет6</p>
+											</label>
+										</div>
+									</div>
 								</div>
 								<div class="filter__item">
 									<a href="#" class="filter__descr">
-										<svg>
+										<svg class="arrow">
 											<use xlink:href="#arrow"></use>
 										</svg>
 										<h3 class="filter__subtitle">
 											Коллекция
 										</h3>
 									</a>
+									<div class="filter__dropdown">
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Коллекция1</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Коллекция2</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Коллеккция3</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Коллекция4</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Коллекция5</p>
+											</label>
+										</div>
+										<div class="checkbox__wrap">
+											<label class="checkbox">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkmark"></span>
+												<p class="checkbox__text">Коллекция6</p>
+											</label>
+										</div>
+									</div>
 								</div>
 								<div class="filter__item material">
 									<a href="#" class="filter__descr">
-										<svg class="arrow_active">
+										<svg class="arrow">
 											<use xlink:href="#arrow"></use>
 										</svg>
 										<h3 class="filter__subtitle">

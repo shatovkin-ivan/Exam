@@ -89,14 +89,10 @@
       top: 100%;
       left: 0;
       width: 100%;
-      max-height: 0;
       z-index: 10;
-      overflow: hidden;
+      display: none;
       margin: 0;
       padding: 0px 0px 30px 15px;
-   }
-   .filter__dropdown_active {
-      max-height: 155px;
       background: rgba(255, 255, 255, 0.8);
    }
    .filter__price {
